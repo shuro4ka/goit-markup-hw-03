@@ -29,6 +29,9 @@ ul {
 button {
   cursor: pointer;
 }
+img {
+  display: block;
+}
 
 .list {
   list-style: none;
@@ -36,8 +39,30 @@ button {
 .link {
   text-decoration: none;
 }
+.ghost {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid;
+}
 
 /*-------------------HEADER-------------------*/
+.header {
+  background-color: var(--background-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -51,6 +76,9 @@ button {
 }
 .logo-light {
   color: var(--letter-color);
+}
+.nav {
+  display: flex;
 }
 .nav-item {
   font-weight: 500;
@@ -66,9 +94,15 @@ button {
 .nav-item.link.current {
   color: var(--brand-color);
 }
-
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 /*-----------CONTACTS-----------*/
-
+.contacts {
+  display: flex;
+}
 .contacts-item {
   font-weight: 500;
   font-size: 14px;
@@ -110,16 +144,11 @@ button {
   border-radius: 4px;
 }
 /*----------FEATURES------------*/
-.ghost {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: 1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -127,6 +156,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
+  margin-bottom: 10px;
 }
 .features-text {
   font-size: 14px;
@@ -136,23 +166,29 @@ button {
   color: var(--text-color);
 }
 /*---------WORKS------------*/
+.works-section {
+}
 .works-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
 /*---------TEAM------------*/
 .team-section {
   background-color: var(--background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.section-main-title {
+.main-title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
 .team-title {
   font-weight: 500;
@@ -160,6 +196,8 @@ button {
   line-height: 19px;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 .team-item {
   font-weight: 500;
@@ -179,6 +217,8 @@ button {
 
 .footer {
   background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   font-style: normal;
@@ -209,7 +249,13 @@ button {
 }
 
 /*------------FILTERS--------------*/
-
+.filters {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.btn.list {
+  margin-bottom: 56px;
+}
 .btn-item {
   font-weight: 500;
   font-size: 16px;

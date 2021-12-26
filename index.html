@@ -17,7 +17,8 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="header-container container">
         <a class="logo link" href=" ">Web<span class="logo-dark">Studio</span></a>
         <nav>
             <ul class="nav list">
@@ -25,21 +26,25 @@
                 <li><a class="nav-item link" href="./portfolio.html">Портфолио</a></li>
                 <li><a class="nav-item link" href="">Контакты</a></li>
             </ul>
-        </nav>
-    <ul class="list">
-        <li><a class="contacts-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contacts-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-    </ul>
+            </nav>
+                <ul class="contacts list">
+                <li><a class="contacts-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="contacts-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+    </div>
+    
     </header>
 
     <section class="hero">
+        <div class="container">
         <h1 class="hero-title">Эффективные решения <br>
             для вашего бизнеса</h1>
         <button class="hero-button" type="button">Заказать услугу</button>
+        </div>
     </section>
 
     <main>
-        <section class="section">
+        <section class="section features-section">
             <div class="container">
             <h2 class="section-title ghost">Принципы работы</h2>
             <ul class="features list">
@@ -63,7 +68,7 @@
             </div>
         </section>
 
-        <section class="works">
+        <section class="section section-works">
             <div class="container">
             <h2 class="works-title">Чем мы занимаемся</h2>
             <ul class="works list">
@@ -74,8 +79,9 @@
             </div>
         </section>
 
-        <section class="team">
-            <h2 class="section-main-title">Наша команда</h2>
+        <section class="team-section">
+            <div class="container">
+            <h2 class="main-title-section">Наша команда</h2>
             <ul class="team list link">
                 <li class="team-item"><img src="./images/img3.jpg" alt="Сотрудник компании 1" width="270" height="260">
                     <h3 class="team-title">Игорь Демьяненко</h3>
@@ -95,9 +101,11 @@
                     <p class="team-text">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 <footer class="footer">
+    <div class="container">
     <a class="logo link" href=" ">Web<span class="logo-light">Studio</span></a>
     <address>
         <ul class="address list">
@@ -108,6 +116,7 @@
             <li><a class="address-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </address>
+    </div>
 </footer>
     
 </body>
