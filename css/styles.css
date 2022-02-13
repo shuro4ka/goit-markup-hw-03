@@ -253,27 +253,30 @@ img {
   letter-spacing: 0.06em;
   color: var(--letter-color);
   margin-top: 30px;
+  border-radius: 4px;
+  
+  transition: background-color, box-shadow, var(--animation-function);
+ 
+  border-color: transparent;
+  padding: 10px 32px;
 }
 .hero-button:hover,
 .hero-button:active {
-  background: var(--brand-color);
+  background-color: #55a7eb;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 /*--------------FEATURES---------------*/
 
 .features {
   display: flex;
+  margin-left: -30px;
+
 }
 .features-item {
   width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-}
-.features-item:nth-child(4n) {
-  margin-right: 0;
-}
-.features-item:nth-last-child(- n + 4) {
-  margin-bottom: 0;
+  margin-left: 30px;
+  
+  
 }
 
 .features-title {
@@ -414,7 +417,8 @@ img {
 .btn.list {
   margin-bottom: 50px;
   display: flex;
-  justify-: center;
+  justify-content: center;
+  align-items: center;
 }
 .button-item {
   margin-right: 8px;
@@ -422,10 +426,9 @@ img {
 .btn-item {
   border: transparent;
   padding: 8px 22px;
-
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   font-family: inherit;
@@ -435,10 +438,9 @@ img {
 }
 .btn-item:hover,
 .btn-item:active {
-  font-family: inherit;
-  letter-spacing: 0.03em;
+  
   color: var(--letter-color);
-  background: var(--brand-color);
+  background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
